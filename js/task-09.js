@@ -13,6 +13,7 @@ const refs = {
 refs.changeBtn.addEventListener("click", changeBcg);
 
 function changeBcg(event) {
-  refs.body.style.backgroundColor = getRandomHexColor()
-  refs.span.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor()
+  refs.body.style.backgroundColor = randomColor;
+  refs.span.textContent = randomColor
 }
